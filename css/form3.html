@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <title>제목</title>    
+</head><body>
+    <h3>폼 요소</h3>
+    <form name="form1">
+        <label for="sel1">크기 선택: </label>
+        <select name="sel1" id="sel1">
+            <option value="">SIZE</option>
+            <option value="la">Large</option>
+            <option value="me">Medium</option>
+            <option value="sm">Small</option>
+        </select><br><br>
+        <label for="sele2">색상 선택: </label>
+        <select name="sel2" id="sel2" multiple>
+            <option value="wh">White</option>
+            <option value="kh">Khaki</option>
+            <option value="br">Brown</option>
+            <option value="bl">Black</option>
+            <option value="or">Orange</option>
+        </select><br><br>
+        수량: <input type="number" min="1" max="10" value="1" name="unum">
+        <br><br>
+        날짜: <input type="date" name="udate"><br><br>
+        시간: <input type="time" name="utime"><br><br>
+        검색: <input type="search" name="usearch">
+    </form>    
+</body></html>

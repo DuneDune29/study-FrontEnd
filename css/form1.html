@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <title>제목</title>    
+    <style type="text/css">
+    table, tr, td { border: 1px solid #666; border-collapse: collapse; } 
+    td { padding: 10px; }
+    </style>
+</head><body>
+    <h3>폼 요소</h3>
+    <form name="form1" method="post" action="">
+    <table><tr><td>
+        <label for="uirum">작성자: </label>
+        <input type="text" name="uname" id="uirum" size="20"><br><br>
+        <fieldset>
+            <legend>가장 좋아하는 계절: </legend>
+            <label><input type="radio" name="radiog"> 봄</label>
+            <label><input type="radio" name="radiog"> 여름</label>
+            <label><input type="radio" name="radiog"> 가을</label>
+            <label><input type="radio" name="radiog"> 겨울</label>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>관심있는 분야: </legend>
+            <input type="checkbox" name="checkb"> 개발언어
+            <input type="checkbox" name="checkb"> 빅데이터
+            <input type="checkbox" name="checkb"> 기타
+        </fieldset><br><br>
+        <label for="area1">기타 의견: </label><br>
+        <textarea name="area" id="area1" rows="5" cols="50">50자 이내로 작성.</textarea>
+    </td></tr><tr><td align="center">
+        <input type="submit" name="submit" value="완 료">
+        &nbsp;&nbsp;&nbsp;
+        <input type="reset" name="reset" value="취 소">
+    </td></tr></table></form>
+</body></html>
