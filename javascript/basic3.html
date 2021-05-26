@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>제목</title><script>
+        var a = 7;
+        if(a % 2 == 0) {
+            document.write(a + "는(은) 짝수<br>");
+        } else {
+            document.write(a + "는(은) 홀수<br>");
+        }
+        val = (a % 2 == 0) ? "짝수" : "홀수";
+
+        str = prompt("국가? 1.한국 2.미국 3.일본 4.중국", "");
+        switch (str) {
+            case '1' : document.write("한국"); break;
+            case '2' : document.write("미국"); break;
+            case '3' : document.write("일본"); break;
+            case '4' : document.write("중국"); break;
+            default : document.write("기타"); break;
+        }
+    </script></head><body></body></html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>제목</title><script>
+    // func1();
+    // 오류발생. 익명 함수 선언 전에 호출했기 때문.
+
+    var func1 = function() { // 익명 함수 선언(정의)
+        document.write("익명 함수<br>");
+    }
+    func1(); // 익명 함수 호출(실행)
+
+    func2(); // 선언적(사용자 정의) 함수 호출(실행)
+    function func2() { // 선언적 함수 선언(정의)
+        document.write("선언적 함수<br>");
+    }
+    </script></head><body></body></html>

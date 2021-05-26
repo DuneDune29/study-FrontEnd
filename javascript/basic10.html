@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>제목</title><script>
+        window.onload = function() {
+            // HTML 엘리먼트에 이벤트 핸들러 지정
+            document.getElementById("btn").onclick = test;
+            document.getElementById("sel").onchange = function(evt) {
+                test2(this.value);
+            };
+        };
+        
+        function test() { alert("사용자 정의 함수"); }
+        function test2(eamil) {
+            // HTML의 특정 엘리먼트를 객체로 접근
+            var text = document.getElementById("email2");
+            // 특정 객체의 value 속성에 값을 지정
+            text.value = eamil;
+        }
+    </script></head><body>
+        <!-- 이벤트 핸들러 지정을 위해 id 속성 필수 -->
+        <p><input type="button" value="테스트" id="btn"></p>
+        <p>이메일: <input type="text" id="email"> @ <input type="text" id="email2">
+        <select id="sel">
+            <option value="">직접입력</option>
+            <option value="naver.com">네이버</option>
+            <option value="gmail.com">지메일</option>
+            <option value="daum.net">다음</option>
+        </select></p>
+    </body></html>

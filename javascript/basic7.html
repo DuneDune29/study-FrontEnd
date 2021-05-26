@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>제목</title>
+    <script>
+        var data = prompt("숫자 5개 입력(,로 구분)", "");
+        // 입력 예시: 99,88,77,66,90
+        var arr = data.split(",");
+        var max = arr[0];
+        var min = arr[0];
+        for (var i = 1; i < 5; i++) {
+            if (parseInt(max) < parseInt(arr[i])) max = arr[i];
+            if (parseInt(max) > parseInt(arr[i])) max = arr[i];
+        }
+        alert("최대값: " + max + ", 최소값: " + min);
+    </script></head><body></body></html>
