@@ -1,0 +1,16 @@
+<!DOCTYPE html><html>
+    <meta charset="UTF-8"><title>document</title>
+    </head><body>
+        <p class="intro">Hello World!</p>
+        <p class="intro"><em>DOM(Document Object Model)</em></p>
+        <p class="intro">getElementByClassName</p>
+        <p id="demo"></p>
+        <script>
+        var x = document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML += x[1].innerHTML;
+        document.getElementById("demo").innerHTML += "<br>tagName: "
+        + x[1].tagName;
+        document.getElementById("demo").innerHTML += "<br>length: "
+        + x.length;
+        </script>
+    </body></html>

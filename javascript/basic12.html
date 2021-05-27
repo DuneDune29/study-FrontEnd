@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"><title>제목</title>
+</head><body>
+    <p id="demo"></p>
+    <button onclick="clearInterval(myVar)">Stop time</button>
+    <script>
+    // 1초마다 myTimer 함수 실행
+    var myVar = setInterval(myTimer, 1000);
+    function myTimer(){
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+    }
+    </script>
+</body></html>
