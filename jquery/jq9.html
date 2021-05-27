@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>콜백함수</title>
+    <style>
+        p { margin: 14px; cursor: pointer; }
+        b { text-decoration: underline; }
+        button { cursor: pointer; }
+        #res { font-size: 20px; color: blue; font-weight: bold; }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+            var htmlStr;
+            $("p").click(function() {
+                htmlStr = $(this).html();       report(htmlStr);
+            });
+        });
+        function report(msg) { $('#res').text(msg); }
+    </script></head><body>
+        <p><strong>html()은</strong> 엘리먼트의 <span id="tag">내용을</span></p>
+        <p>HTML 형식의 <span id="text">문자열로</span> 리턴한다.</p>
+        <p>버튼을 포함한 <button name="oktbtn">button</button> 문장이다.</p>
+        <div id="rers"></div>
+    </body></html>

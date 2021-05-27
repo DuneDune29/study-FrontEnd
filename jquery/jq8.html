@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>콜백함수</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("img").attr( { width: "100px", height: "100px" } );
+            $("img").attr("src", function() {
+                return "img/" + this.title + ".jpg";
+            });
+            $("img").attr("title", function(index) {
+                return index + "번 img 엘리먼트 타이틀은 " + this.title;
+            });
+        });
+    </script></head><body>
+        <img title="im1"> <img title="im2"> <img title="im3">
+    </body></html>

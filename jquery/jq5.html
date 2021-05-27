@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8"><title>sample</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var resultText = "";
+            var $searchEles = $('p, span, div.simpletext1');
+            resultText += "엘리먼트 개수: " + $searchEles.length + "\n";
+            $searchEles.each(function() {
+                resultText += $(this).text() + ", ";
+            });
+            alert($.trim(resultText));
+        });
+    </script></head><body>
+        <span>simple</span>
+        <div class='simpletext1'>jQuery</div>
+        <div>basic</div>
+        <p>example</p>
+    </body></html>
+    

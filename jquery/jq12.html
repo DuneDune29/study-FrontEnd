@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head>
+    <title></title><style>
+        div, span { width: 60px; height: 60px; margin: 5px; float: left; 
+        border: 2px red solid; background: white; }
+        .after {background: pink; }
+        .selected { border: 5px blue solid; }
+    </style><script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+            $('button').click(function() {
+                $('div').next().addClass("after");
+                $('div').next("#fourth").addClass("selected");
+            });
+        });   
+    </script></head><body>
+        <p><button>형제 엘리먼트에 스타일 입히기</button></p>
+        <div id="first">first</div>
+        <span id="second" class="middle">sibling</span>
+        <div id="third" class="middle">sibling</div>
+        <span id="fourth" class="middle">sibling</span>
+        <span id="fifth" class="middle">sibling</span>
+        <div id="sixth">last</div>
+    </body></html>
