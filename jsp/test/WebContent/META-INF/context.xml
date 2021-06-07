@@ -1,0 +1,11 @@
+<Context>
+	<Resource name="jdbc/MariaDB"
+	auth="Container"
+	type="javax.sql.DataSource"
+	username="root"
+	password="m1234"
+	driverClassName="org.mariadb.jdbc.Driver"
+	url="jdbc:mariadb://localhost:3306/test"
+	maxActive="500"
+	maxIdle="100"/>
+</Context>
