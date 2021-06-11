@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ajaxTest.html</title>
+</head>
+<body>
+	<p id="demo">change text</p>
+	<button type="button" onclick="loadDoc()">Change</button>
+	<script>
+	function loadDoc() {
+		var xhttp;
+		// 1. 객체 생성
+		if (window.XMLHttpRequest) { // for modern browers
+			xhttp = new XMLHttpRequest();	
+		} else { // for IE6, IE5
+			xhttp = new ActiveXObject("Microsoft.XMLHttp");
+		}
+		// 2. 응답을 받아왔을 때 처리할 형식 정의
+		xhttp.onreadystatechange = function() {
+			// readystate 속성이 변경될 때마다 해당 function 호출
+			if (xhttp.readyState == 4 && xhttp.status == 200) {
+				// readystate = 4 는 응답 완료 상태
+				// statues = 200 은 정상적으로 페이지 호출 성공
+				document.getElementById("demo").innerHTML = xhttp.responseText;
+			}
+		};
+		// 3. open, send 함수 설정
+		// get 방식 요청, 데이터 받아올 페이지, true는 비동기통신
+		xhttp.open("GET", "ajax_info.html", true);
+		xhttp.send();
+	}
+	</script>
+</body>
+</html>
