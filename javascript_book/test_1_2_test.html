@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var onesale = 1200;
+        var twosale = 1300;
+        var threesale = 1000;
+        var foursale = Number(prompt("4분기 판매량","0"));
+
+        var allaverage = (onesale + twosale + threesale + foursale)/4;
+        result = foursale >= allaverage?"판매량이 평균 이상입니다.":"판매량이 평균 미달입니다.";
+        document.write(result); 
+        
+    </script>
+</body>
+</html>
